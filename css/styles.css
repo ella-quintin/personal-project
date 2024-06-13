@@ -2,6 +2,14 @@
     margin: 0;
 }
 
+body {
+    font-family: Raleway, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    margin: auto;
+}
 
 #logo {
     width: 100px;
@@ -20,12 +28,23 @@ nav {
     flex-direction: row;
     /* justify-content: space-between; */
     padding: 20px 30px;
+    /* padding: 10px 0; */
     position: fixed;
-    /* background-color: black; */
+    background-color: black;
     transition: background-color 0.5s;
     /* overflow-x: hidden; */
 }
 
+nav {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: black;
+    transition: background-color 0.5s;
+  }
 .scrolled {
     background-color: black;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -43,6 +62,10 @@ nav {
     color: white;
 }
 
+/* #nav-links span {
+    margin: 15px;
+}  */
+
 a {
     text-decoration: none;
 }
@@ -50,6 +73,10 @@ a {
 #nav-links a {
     color: inherit;
 }
+#nav-links span:hover {
+    color: #009DFF;
+    cursor: pointer;
+} 
 
 nav button {
     background-color: #009DFF;
@@ -88,7 +115,6 @@ nav button:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 120px 60px 0px 0px;
 }
 
 .h3text {
@@ -208,9 +234,9 @@ nav button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* column-gap: 5px; */
-    padding-top: 80px;
+    padding: 60px 0px 40px 0px;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .offer-img1 {
@@ -220,7 +246,7 @@ nav button:hover {
 
 .offer-img2 {
     width: 350px;
-    height: 350px;
+    height: 350px
 }
 
 .offer-img3 {
@@ -230,7 +256,7 @@ nav button:hover {
 
 .offer-text {
     font-family: Raleway, sans-serif;
-    margin: 40px 75px;
+    /* margin: 40px 75px; */
 }
 
 .offer-text h3 {
@@ -238,6 +264,7 @@ nav button:hover {
     font-weight: 400;
     color: rgb(31, 31, 31);
     line-height: 26.4px;
+    padding-top: 30px;
 }
 
 .offer-text ul {
@@ -265,3 +292,129 @@ nav button:hover {
     background-color: #009DFF;
     color: white;
   }
+
+  #video {
+    background-image: url(../assets/videos/202392-918066367_small.mp4);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+#video-sec {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+  }
+
+#video {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+.video-header h4 {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    }
+    
+    .video-header h3 {
+        font-size: 46px;
+        color: rgb(255, 255, 255);
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+
+    #food  {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        /* max-width: 70%; */
+        padding: 90px;
+    }
+    
+    .food-image {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    
+    .food-image img {
+        width: 330px;
+        height: 420px;
+        /* border-radius: 8px; */
+        flex-direction: column;
+        /* margin-right: 60px; */
+        padding-left: 70px;
+    }
+    
+    .food-image2 img {
+        width: 300px;
+        height: 400px;
+        /* border-radius: 8px; */
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    .food-text {
+        width: 30%;
+        margin-bottom: 30px;
+        text-align: left;
+        column-gap: 130px;
+    }
+    
+    .food-text h2 {
+        font-family: Raleway, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #009DFF;
+        margin-bottom: 20px;
+    } 
+    
+    .food-text h3 {
+        font-family: Raleway, sans-serif;
+        font-size: 46px;
+        font-weight: 400;
+        color: black;
+        margin-bottom: 20px;
+    }
+    
+    .food-text p {
+        font-family: Raleway, sans-serif;
+        font-size: 15px;
+        color: rgb(88, 88, 88);
+        margin-bottom: 20px;
+        line-height: 1.5rem;
+    }
+    
+    .food-text a {
+        font-family: Raleway, sans-serif;
+        font-size: 16px;
+        color: #9191AD;
+        font-weight: 400;
+        outline-color: #9191AD;
+        text-decoration: underline;
+    }
+    
+    .food-text a:hover {
+        color: #009DFF;
+    }
+  
